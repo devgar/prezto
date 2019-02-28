@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Import .zlocal file
+if [[ -s "$HOME" ]]; then
+  source "$HOME/.zlocal"
+else
+  touch "$HOME/.zlocal"
+fi
