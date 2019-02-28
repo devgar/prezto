@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 
 # Import .zlocal file
-if [[ -s "$HOME" ]]; then
+if [[ -s "$HOME/.zlocal" ]]; then
   source "$HOME/.zlocal"
 else
   touch "$HOME/.zlocal"
